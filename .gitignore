@@ -1,0 +1,8 @@
+__pycache__
+.venv
+*.db
+*.рус
+*.pyo
+*.pyd
+*sqlite3
+*.log

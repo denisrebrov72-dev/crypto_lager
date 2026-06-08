@@ -24,7 +24,7 @@ def get_transactions():
     return crud.get_transactions()
 
 @app.post("/blocks/",summary = "Создание транзакции", response_description="Детали созданной транзакции")
-def creat_block(block:models.BlockCreate):
+def handler_block(block:models.BlockCreate):
     ans = crud.create_block(block)
     ans.update({"message":"блок успешно создан!"})
     return ans
